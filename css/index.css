@@ -51,7 +51,7 @@
 }
 .word{
     color: #CE0000;
-    font-size: 16px;
+    font-size: 14px;
     
 }
 .nav{
@@ -82,11 +82,15 @@
     width: 100%;
     height: 400px;
 }
-.wrapper{
+.vedio{
     width: 100%;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
+    height: 300px;
 }
-.wrapper ul{position: relative;list-style: none;overflow: hidden;width: 400%;height:400px;}
-.wrapper ul li{float: left;width:25%;height:100%;text-align:center;color:#fff;}
+.vedio_left{
+    width: 300px;
+    height: 300px;
+}
+.vedio_left video{
+    width: 100%;
+    height: 100%;
+}
