@@ -1,0 +1,92 @@
+.header{
+    width: 100%;
+    height: 100px;
+    /* background: pink; */
+    position: relative;
+}
+.logo{
+    width: 250px;
+    height: 60px;
+    background: yellow;
+    position: absolute;
+    top: 17px;
+    left: 0;  
+    background: url('../gzimg/logo1.png') no-repeat;
+    background-size: cover;
+}
+.right{
+    top: 17px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+   
+}
+.input{
+  position: relative;
+  height: 36px;
+}
+.input .input_div{
+    position: absolute;
+    right: 0;
+    width: 220px;
+    height: 26px;
+    border: 1px solid #999;
+}
+.input .input_div input{
+    height: 25px;
+    width: 175px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.input .input_div span{
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    width: 15px;
+    height:15px;
+    background: url('../gzimg/搜索.png')no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
+.word{
+    color: #CE0000;
+    font-size: 16px;
+    
+}
+.nav{
+    background: #004987;
+    width: 100%;
+    height: 46px;
+}
+.nav_ul{
+    width: 99%;
+    height: 45px;
+    margin: 0 auto;
+}
+.nav_li{
+    width: 9.09%;
+    height: 100%;
+    /* border-bottom: 1px solid red; */
+    float: left;
+    text-align: center;
+}
+.nav_li a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 45px;
+}
+.Carousel{
+    width: 100%;
+    height: 400px;
+}
+.wrapper{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper ul{position: relative;list-style: none;overflow: hidden;width: 400%;height:400px;}
+.wrapper ul li{float: left;width:25%;height:100%;text-align:center;color:#fff;}

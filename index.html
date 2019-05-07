@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>广东机械质量网</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./js/idangerous.swiper.css">
+    <script src="./js/respond.src.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+    <script src="./js/jquery-1.10.1.min.js"></script>
+    <script src="./js/lunbo.js"></script>
+    <script src="./js/idangerous.swiper.min.js"></script>
+    <style>
+    .swiper-container {
+        width: 100%;
+        height:400px;
+        margin: auto; 
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 1.125rem;
+        background: #fff;
+        width: 9.375rem;
+        height: 9.375rem;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide:hover{
+        cursor: pointer;
+    }
+    .banner-swiper{
+        position: relative;
+    }
+    .pagination {
+  position: absolute;
+  z-index: 20;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #555;
+  margin: 0 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="w">
+            <div class="logo"> </div>
+            <div class="right"> 
+                <div class="input">
+                    <div class="input_div">
+                            <input type="text">
+                            <span></span>
+                    </div>
+                    
+                </div>     
+                <p class="word">
+                 业务指导单位：广东省经济和信息化委员会 主办：广东省机械工业质量管理协会
+                </p>
+            </div>
+        </div> 
+    </div>
+    <div class="nav">
+        <div class="w">
+                <ul class="nav_ul">
+                  <li class="nav_li"><a href="#">网站首页</a></li>
+                  <li class="nav_li"><a href="#">网站首页</a></li>
+                  <li class="nav_li"><a href="#">网站首页</a></li>
+                  <li class="nav_li"><a href="#">网站首页</a></li>
+                  <li class="nav_li"><a href="#">网站首页</a></li>
+                  <li class="nav_li"><a href="#">网站首页</a></li>
+                  <li class="nav_li"><a href="#">网站首页</a></li>
+                  <li class="nav_li"><a href="#">网站首页</a></li>
+                  <li class="nav_li"><a href="#">网站首页</a></li>
+                  <li class="nav_li"><a href="#">网站首页</a></li>
+                  <li class="nav_li"><a href="#">网站首页</a></li>
+                </ul>
+        </div>
+    </div>
+    <div class="Carousel">
+        <div class="w">  
+                <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                                <img src="http://lorempixel.com/600/600/nature/4" alt="" style="width: 100%;height: 100%;">
+                          </div>
+                          <div class="swiper-slide">
+                                <img src="http://lorempixel.com/600/600/nature/1" alt="" style="width: 100%;height: 100%;">
+                          </div>
+                          <div class="swiper-slide">
+                                <img src="http://lorempixel.com/600/600/nature/2" alt="" style="width: 100%;height: 100%;">
+                          </div>
+                        </div>
+                        <div class="pagination"></div> 
+                      </div>
+            <!-- <div class="wrapper">
+                <ul>
+                    <li class="wLi" style="background: red;">1</li>
+                    <li class="wLi" style="background: yellow;">2</li>
+                    <li class="wLi" style="background: blue;">3</li>
+                </ul> 
+            </div> -->
+            <!-- <button id="prev">left</button>
+            <button id="next">right</button> -->
+        </div>
+    </div>
+    <div class="content"></div>
+    <div class="footer"></div>
+</body>
+</html>
+<script> 
+    var mySwiper = new Swiper('.swiper-container',{
+    autoplay : 5000,//可选选项，自动滑动
+    loop : true,//可选选项，开启循环
+    pagination : '.pagination',
+    paginationClickable :true,
+    }) 
+
+</script>
