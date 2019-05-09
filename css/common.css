@@ -1,5 +1,5 @@
 *{margin: 0px;padding: 0px;}
-body {background: #FFFFFF;color: #333;font-family: "微软雅黑";font-size: 14px;font-weight: lighter;}
+body {background: #FFFFFF;color: #333;font-family: "微软雅黑";font-size: 14px;font-weight: lighter;min-width: 1000px;}
 ul,li,ol,dl,dt,dd {list-style: none;}
 a {color: #333;text-decoration: none;cursor: pointer;outline: 0 none;}
 a:link,a:visited {text-decoration: none;color: #1F376D;}
@@ -79,13 +79,202 @@ background: #fff;
         margin:0 auto;
         position: relative;  
     }
+    .ad ul  li{
+        width: 338px;
+        float: left;   
+        height: 80px;
+        margin-left: 5px;
+    }
+    .ad1 ul  li{
+        width: 252px;
+        float: left;   
+        height: 80px;
+        margin-left: 5px;
+    }
+    .logo_ad_left{
+        width: 740px;
+        height: 130px;
+     }
 }
-@media screen and (max-width:1024px){
+.w{
+        width:1000px;
+        margin:0 auto;
+        position: relative;
+}
+.active{
+    background: #006DC9;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    /* background: pink; */
+    position: relative;
+}
+.logo{
+    width: 250px;
+    height: 60px;
+    background: yellow;
+    position: absolute;
+    top: 17px;
+    left: 0;  
+    background: url('../gzimg/logo1.png') no-repeat;
+    background-size: cover;
+}
+.right{
+    top: 17px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+   
+}
+.input{
+  position: relative;
+  height: 27px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.input .input_div{
+    position: absolute;
+    right: 0;
+    width: 220px;
+    height: 26px;
+    border: 1px solid #999;
+}
+.input .input_div input{
+    height: 25px;
+    width: 175px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.input .input_div span{
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    width: 15px;
+    height:15px;
+    background: url('../gzimg/search.png')no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
+.word{
+    color: #CE0000;
+    font-size: 14px;
+    
+}
+.nav{
+    background: #004987;
+    width: 100%;
+    height: 46px;
+}
+.nav_ul{
+    width: 99%;
+    height: 45px;
+    margin: 0 auto;
+}
+.nav_li{
+    width: 87px;
+    height: 100%;
+    /* border-bottom: 1px solid red; */
+    float: left;
+    text-align: center;
+}
+.nav_li:nth-child(5){
+    width: 120px;
+}
+.nav_li:hover{
+    background: #006DC9;
+}
+
+.nav_li a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 45px;
+    display: block;
+}
+.Carousel{
+    width: 100%;
+    height: 400px;
+}
+/* footer */
+.footer{
+    width: 100%;
+    min-height: 400px;
+    background: #004987;
+    margin-top: 40px;
+}
+.footer_nav{
+    width: 100%;
+}
+.footer_nav ul{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    padding-top: 60px;
+}
+.footer_nav ul li{
+    float: left; 
+}
+.footer_nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_nav ul .nav_li1{
+    width: 87px;
+    height: 45px;
+    float: left;
+    text-align: center;
+    color: #ffffff;
+}
+.footer_nav ul .nav_li1:nth-child(9){
+    width: 120px;
+}
+.li_line{
+    width: 1px;
+    height: 15px;
+    background: #ffffff;
+    margin-top: 15px;
+}
+.banquan_word{
+    margin-top: 50px;
+}
+.banquan{
+    text-align: center;
+    height: 50px;
+    color: #ffffff;
+}
+.banquan_img{
+    width: 80px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+/* @media screen and (max-width:1024px){
     .w{
         width:960px;
         margin:0 auto;
         position: relative;
     }   
+    .ad ul  li{
+        width: 315px;
+        float: left;   
+        height: 80px;
+        margin-left: 5px;
+    }
+    .ad1 ul  li{
+        width: 235px;
+        float: left;   
+        height: 80px;
+        margin-left: 5px;
+    }
+    .logo_ad_left{
+        width: 685px;
+        height: 130px;
+     }
 }
 @media screen and (min-width:1200px){
     .w{
@@ -93,4 +282,20 @@ background: #fff;
         margin:0 auto;
         position: relative;
     }  
-}
+    .ad ul  li{
+        width: 395px;
+        float: left;   
+        height: 80px;
+        margin-left: 5px;
+    }
+    .ad1 ul  li{
+        width: 295px;
+        float: left;   
+        height: 80px;
+        margin-left: 5px;
+    }
+    .logo_ad_left{
+        width: 909px;
+        height: 130px;
+     }
+} */

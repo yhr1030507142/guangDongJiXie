@@ -1,0 +1,151 @@
+html{
+    height: 100%;
+}
+body{
+  
+    height: 100%;
+}
+.m-t{
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+.about_content{
+    width: 100%;
+    min-height:700px; 
+    padding-bottom: 50px;
+    clear: both;
+    overflow: auto;
+    background: #F3F3F3;
+}
+.a_title{
+    width: 100%;
+    position: relative;
+    height: 30px;
+}
+.a_title p{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #666666;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+.a_title p a{
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+}
+.a_word{
+    width: 100%;
+}
+.a_word_left{
+    width: 260px;
+}
+.a_word_left_nav{
+    width: 100%;
+    min-height: 160px;
+    border: 1px solid #ccc;
+}
+.a_word_right{
+    width: 700px;
+    margin-left: 17px;
+    border: 1px solid #ccc;
+    min-height: 700px;
+    padding-bottom: 80px;
+}
+.a_word_left_nav_title{
+    width: 100%;
+    height: 70px;
+    background: #004987;
+}
+.a_word_left_nav_title ul{
+    width: 100%;
+}
+.a_word_left_nav ul li{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #ffffff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    color: #666666;
+    cursor: pointer;
+}
+.a_word_left_nav ul li:hover{
+    color: #ba8940;
+}
+.a_word_left_nav ul .li_word{
+    padding-left: 30px;
+}
+.a_word_left_nav ul .icon{
+    position: absolute;
+    right: 20px;
+    background: url('../gzimg/sideIcon4.png')no-repeat right center;
+    display: block;
+    top: 0;
+    height: 51px;
+    width: 10px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.a_word_left_nav_title p{
+    padding-top: 15px;
+    color: #f3f3f3;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.a_word_left_nav_title span{
+    color: #f3f3f3;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.a_word_right_top{
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.a_word_right_top p{
+    height: 70px;
+    font-size: 16px;
+    color: #004987;
+    line-height: 70px;
+    width: 100px;
+    text-align: center;
+    border-bottom: 2px solid #004987;
+    margin-left: 30px;
+    font-weight: 500;
+
+}
+.a_word_right_content{
+    color: #333333;
+    font-size: 14px;
+    line-height:18px; 
+    letter-spacing:1px;  
+    width: 90%;
+    margin: 10px auto;
+}
+.a_word_right_content p{
+    text-indent:2em;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.info{
+    width: 90%;
+    margin: 0 auto;
+   color: #999999;
+   overflow: auto;
+   margin-top: 5px;
+   padding-left: 10px;
+}
+.label{
+    clear: both;
+    min-width: 45px;
+}
+.about_active{
+    color:#ba8940 !important;
+}
