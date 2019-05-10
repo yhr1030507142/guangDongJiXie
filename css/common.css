@@ -24,27 +24,48 @@ table{border-collapse:collapse;}
     width: 100%;
     height:400px;
     margin: auto; 
+  
 }
 .swiper-slide {
-    text-align: center;
-    font-size: 1.125rem;
+    position: relative;
     background: #fff;
-    width: 9.375rem;
-    height: 9.375rem;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    width: 100%;
+    height: 100%;
 }
+.banner_word{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 550px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+    margin-left: -275px;
+    margin-top: -50px;
+    text-align: center;
+}
+.banner_word:hover{
+    background-color: rgba(255,255,255,0.6);
+}
+.banner_word p{
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    color: #000;
+    z-index: 999;
+    line-height: 100px;
+}
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+    .banner_word{
+    background-color: #ffffff;
+      filter:Alpha(opacity=50);
+      position:static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+      *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+    }
+    .banner_word p{
+      position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+    }  
+  }
 .swiper-slide:hover{
     cursor: pointer;
 }
@@ -111,26 +132,25 @@ background: #fff;
     position: relative;
 }
 .logo{
-    width: 250px;
-    height: 60px;
-    background: yellow;
+    width: 410px;
+    height: 80px;
+    /* background: yellow; */
     position: absolute;
     top: 17px;
     left: 0;  
-    background: url('../gzimg/logo1.png') no-repeat;
-    background-size: cover;
+    /* background: url('../gzimg/logo9.png') no-repeat center;
+    background-size: 350; */
 }
 .right{
-    top: 17px;
-    height: 60px;
+    /* top: 17px; */
+    /* height: 60px; */
     position: absolute;
-    right: 0;
-   
+    right: 0; 
 }
 .input{
   position: relative;
   height: 27px;
-  width: 100%;
+  /* width: 100%; */
   border: none;
   outline: none;
 }
@@ -140,6 +160,8 @@ background: #fff;
     width: 220px;
     height: 26px;
     border: 1px solid #999;
+    top: 40px;
+    margin-right: 20px;
 }
 .input .input_div input{
     height: 25px;
@@ -148,20 +170,37 @@ background: #fff;
     outline: none;
     padding-left: 10px;
 }
+.erweima{
+    width: 90px;
+    height: 90px;  
+    transition: all 0.6s;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.erweima:hover{
+    transform: scale(1.1)
+}
+.erweima img{
+    width: 100%;
+    height: 100%;
+}
 .input .input_div span{
     position: absolute;
     right: 15px;
     top: 3px;
     width: 15px;
     height:15px;
-    background: url('../gzimg/search.png')no-repeat center;
-    background-size: cover;
+    /* background: url('../gzimg/search.png')no-repeat center;
+    background-size: cover; */
     cursor: pointer;
+}
+.input .input_div span img{
+    width: 100%;height: 100%;
 }
 .word{
     color: #CE0000;
     font-size: 14px;
-    
+    margin-top: 10px;
 }
 .nav{
     background: #004987;
@@ -224,14 +263,17 @@ background: #fff;
 }
 
 .footer_nav ul .nav_li1{
-    width: 87px;
+    width: 86px;
     height: 45px;
     float: left;
     text-align: center;
     color: #ffffff;
 }
 .footer_nav ul .nav_li1:nth-child(9){
-    width: 120px;
+    width: 119px;
+}
+.quality_navli1{
+    width: 119px;
 }
 .li_line{
     width: 1px;
