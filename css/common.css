@@ -20,6 +20,7 @@ table{border-collapse:collapse;}
 .t-c {text-align: center;}
 .t-r {text-align: right;}
 .vm {vertical-align: middle}
+/*html5*/ article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
 .swiper-container {
     width: 100%;
     height:400px;
@@ -55,14 +56,28 @@ table{border-collapse:collapse;}
     z-index: 999;
     line-height: 100px;
 }
+
 @media \0screen\,screen\9 {/* 只支持IE6、7、8 */
     .banner_word{
-    background-color: #ffffff;
+        position: absolute;
+        width: 550px;
+        height: 100px;
+        border-radius: 10px;
+        background-color: #ffffff;
       filter:Alpha(opacity=50);
-      position:static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+      margin-left: -275px;
+      margin-top: -50px;
+      text-align: center;
+   
       *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
     }
     .banner_word p{
+        width: 100%;
+        height: 100%;
+        font-size: 36px;
+        color: #000;
+        z-index: 999;
+        line-height: 100px;
       position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值 */
     }  
   }
@@ -146,7 +161,10 @@ background: #fff;
     /* height: 60px; */
     position: absolute;
     right: 0; 
+    height: 100%;
+  
 }
+
 .input{
   position: relative;
   height: 27px;
@@ -176,14 +194,24 @@ background: #fff;
     transition: all 0.6s;
     margin-top: 5px;
     cursor: pointer;
+    position: relative;
 }
-.erweima:hover{
-    transform: scale(1.1)
+
+.erweima p{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 247px;
+}
+.erweima img:hover{
+    transform: scale(1.1);
 }
 .erweima img{
-    width: 100%;
-    height: 100%;
+    width: 70px;
+    height: 70px;
+    transition: all 0.6s;
 }
+
 .input .input_div span{
     position: absolute;
     right: 15px;
@@ -217,7 +245,32 @@ background: #fff;
     height: 100%;
     /* border-bottom: 1px solid red; */
     float: left;
-    text-align: center;
+    position: relative;
+}
+.nav_li .nav_li_child_ul{
+    min-width: 100%;
+    position:absolute;
+    display:none; 
+    z-index: 999;
+}
+.nav_li .nav_li_child_ul li{
+    float:none;
+    background-color:#004987; 
+    
+}
+.nav_li .nav_li_child_ul li a{
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+   width: auto;
+   white-space: nowrap;
+   display: block;
+}
+.nav_li .nav_li_child_ul li:hover{
+    background: #006DC9;
+}
+.nav_li:hover .nav_li_child_ul{
+    display:block;
 }
 .nav_li:nth-child(5){
     width: 120px;
@@ -229,21 +282,34 @@ background: #fff;
 .nav_li a{
     width: 100%;
     height: 100%;
-    text-align: center;
     color: #fff;
     line-height: 45px;
     display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav_li a:first-child{
+    text-align: center;
+    padding: 0;
 }
 .Carousel{
     width: 100%;
     height: 400px;
 }
+.new_tilte_active{
+    cursor: pointer;
+    color: #ffffff !important;
+    background: #004987 !important;
+}
+.position_com{
+    position: relative;
+}
 /* footer */
 .footer{
     width: 100%;
-    min-height: 400px;
+    min-height: 360px;
     background: #004987;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .footer_nav{
     width: 100%;
@@ -273,7 +339,7 @@ background: #fff;
     width: 119px;
 }
 .quality_navli1{
-    width: 119px;
+    width: 119px !important;
 }
 .li_line{
     width: 1px;
@@ -282,11 +348,12 @@ background: #fff;
     margin-top: 15px;
 }
 .banquan_word{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .banquan{
     text-align: center;
-    height: 50px;
+    height: 30px;
+    line-height: 30px;
     color: #ffffff;
 }
 .banquan_img{
